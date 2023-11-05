@@ -1,0 +1,21 @@
+{
+  "extends": "expo/tsconfig.base",
+  "compilerOptions": {
+    "jsx": "react-native",
+    "strict": true,
+    "esModuleInterop": true,
+    "lib": ["DOM", "ESNext"],
+    "moduleResolution": "node",
+    "noEmit": true,
+    "resolveJsonModule": true,
+    "skipLibCheck": true,
+    "target": "ESNext",
+    "baseUrl": ".",
+    "allowJs": true,
+    "paths": {
+      "app": ["./app/"]
+    }
+  },
+  "exclude": ["node_modules"],
+  "include": ["./app/**/*.tsx", "./app/**/*.ts", "app/styles/styles.ts", "app/screens/Login.jsx"]
+}
